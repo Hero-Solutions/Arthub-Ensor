@@ -128,7 +128,7 @@ cp -r solr-conf/blacklight-core/ solr/server/solr
 rake solr:start
 ```
 
-If rake solr:clean returns an error when attempting to download solr-x.x.x.zip.md5 (as it often does), you can manually download it, for example from https://archive.apache.org/dist/lucene/solr/7.3.1/solr-7.3.1.zip.md5 and copy the file to the 'tmp/' folder, then run rake solr:clean again. If it still fails, it may be necessary to download solr-x.x.x.zip as well from the same website.
+If rake solr:clean returns an error when attempting to download solr-x.x.x.zip.md5 (as it often does), you can manually download it, for example from https://archive.apache.org/dist/lucene/solr/7.3.1/solr-7.3.1.zip.md5 and copy the file to the 'tmp/' folder (relative to the project root), then run rake solr:clean again. If it still fails, it may be necessary to download solr-x.x.x.zip as well from the same website and put it in 'tmp/' as well.
 
 Precompile all assets by running the following command on the command line:
 ```
