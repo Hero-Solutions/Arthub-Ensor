@@ -26,7 +26,7 @@ The complete Arthub Ensor installation requires the following components:
   * php-curl
   * php-gd
   * php-imagick
-* Ruby >= 2.4, Bundler >= 1.16 and Rails >= 5.1 (recommended through [rvm](https://rvm.io/rvm/install))
+* Ruby >= 2.4, Bundler >= 1.16, Rails >= 5.1 and the SQLite3 gem (we recommend to install these through [rvm](https://rvm.io/rvm/install))
 * MySQL or MariaDB database server
 * Apache or NGinx webserver
 * [Cantaloupe](https://cantaloupe-project.github.io/) >= 4.1
