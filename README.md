@@ -43,7 +43,10 @@ filename;datahub_record_id
 
 This CSV will be required by the Imagehub later on.
 
-Your ResourceSpace installation also requires a specific set of metadata fields. You can set this up by using the resourcespace_metadata_fields.sql file included in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) project, this will drop and recreate the resource_type_field table.
+Your ResourceSpace installation also requires a specific set of metadata fields. You can set this up by using the resourcespace_metadata_fields.sql file included in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) project, this will drop and recreate the resource_type_field table. You can do so by running the following command on the server where ResourceSpace is installed:
+```
+mysql -u resourcespace -presourcespace resourcespace < resourcespace_metadata_fields.sql
+```
 
 Certain metadata fields, most notably dropdown lists (for example Publisher and Cleared for usage) need to be prefilled with the necessary values before adding resources. This can be done either manually through the admin console of ResourceSpace or by using the resourcespace_node_values.sql included in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) project.
 
@@ -56,7 +59,7 @@ CREATE TABLE `iiif_manifest` (
   PRIMARY KEY (`id`)
 );
 ```
-A MySQL user is to be created with full access to this table. The username, password and database name can be freely chosen and are configured in the .env file in this repository.
+A MySQL user is to be created with full access to this table. The username, password and database name can be freely chosen and are configured in the .env file in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) repository.
 
 ## Installation
 
