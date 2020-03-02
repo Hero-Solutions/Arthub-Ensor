@@ -384,3 +384,5 @@ Last of all, run the following two commands inside the Imagehub-Fixes folder:
 bash arthub-index.sh -e http://datahub.vlaamsekunstcollectie.be/oai -l nl
 bash arthub-index.sh -e http://datahub.vlaamsekunstcollectie.be/oai -l en
 ```
+
+This will export all Datahub records and create an Apache Solr document for each document. You can now browse to the Arthub in your browser to browse through these documents.
