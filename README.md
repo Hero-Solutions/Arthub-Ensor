@@ -360,8 +360,8 @@ $iiif_ptif_commands = array(
 
 Once all is set up correctly, you can start uploading images in bulk to ResourceSpace, making sure the following metadata fields are correctly set upon uploading:
 * Publisher
-* Cleared for usage (checked)
-* Recommended image for publication (expand the entire tree and check everything including 'public use')
+* Cleared for usage (expand the entire tree and check everything including 'public use')
+* Recommended image for publication (checked)
 
 ### Adding Datahub metadata to ResourceSpace
 
