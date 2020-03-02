@@ -202,6 +202,7 @@ This will allow the pipeline to fetch Dutch metadata from the Datahub and put it
 ### Webserver configuration
 
 The necessary Apache or Nginx configuration should be written in order to access the Arthub, Imagehub and ResourceSpace installations (ideally through different subdomains).
+
 A sample Nginx configuration file for the Arthub and Imagehub combined may look like this:
 ```
 server {
