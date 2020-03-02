@@ -369,11 +369,11 @@ This will match each row in the CSV with each resource in ResourceSpace by filen
 
 ### Generating and storing IIIF manifests
 
-Lastly, execute the following command in order to generate IIIF Presentation API manifests for each resource:
+Once the appropriate metadata is added to each resource, execute the following command in order to generate IIIF Presentation API manifests for each resource:
 ```
 bin/console app:generate-iiif-manifests resource_id
 ```
-All manifests will be stored in a MySQL database and a link to the manifest will be added to the appropriate Datahub record.
+All manifests will be stored in a MySQL database and a link to each manifest will be added to the appropriate Datahub records.
 
 The Imagehub also provides the appropriate logging. Logs are stored in var/logs/.
 
