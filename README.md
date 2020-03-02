@@ -43,9 +43,9 @@ filename;datahub_record_id
 
 This CSV will be required by the Imagehub later on.
 
-Your ResourceSpace installation also requires a specific set of metadata fields. You can set this up by using the resourcespace_metadata_fields.sql file included in this project, this will drop and recreate the resource_type_field table.
+Your ResourceSpace installation also requires a specific set of metadata fields. You can set this up by using the resourcespace_metadata_fields.sql file included in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) project, this will drop and recreate the resource_type_field table.
 
-Certain metadata fields, most notably dropdown lists (for example Publisher and Cleared for usage) need to be prefilled with the necessary values before adding resources. This can be done either manually through the admin console of ResourceSpace or by using the resourcespace_node_values.sql included in this project.
+Certain metadata fields, most notably dropdown lists (for example Publisher and Cleared for usage) need to be prefilled with the necessary values before adding resources. This can be done either manually through the admin console of ResourceSpace or by using the resourcespace_node_values.sql included in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) project.
 
 The Imagehub itself also requires its very own database containing a table 'iiif_manifest' according to the following structure:
 ```
