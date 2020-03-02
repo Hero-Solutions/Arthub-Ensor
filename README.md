@@ -385,4 +385,4 @@ bash arthub-index.sh -e http://datahub.vlaamsekunstcollectie.be/oai -l nl
 bash arthub-index.sh -e http://datahub.vlaamsekunstcollectie.be/oai -l en
 ```
 
-This will export all Datahub records and create an Apache Solr document for each document. You can now browse to the Arthub in your browser to browse through these documents.
+This will export all Datahub records and create an Apache Solr document for each record. You can then browse to the Arthub in your browser to look them up.
