@@ -48,7 +48,11 @@ Your ResourceSpace installation also requires a specific set of metadata fields.
 mysql -u resourcespace -presourcespace resourcespace < resourcespace_metadata_fields.sql
 ```
 
-Certain metadata fields, most notably dropdown lists (for example Publisher and Cleared for usage) need to be prefilled with the necessary values before adding resources. This can be done either manually through the admin console of ResourceSpace or by using the resourcespace_node_values.sql included in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) project.
+Certain metadata fields, most notably dropdown lists (for example Publisher and Cleared for usage) need to be prefilled with the necessary values before adding resources. This can be done either manually through the admin console of ResourceSpace or by using the resourcespace_node_values.sql included in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor):
+```
+mysql -u resourcespace -presourcespace resourcespace < resourcespace_node_values.sql
+```
+
 
 The Imagehub itself also requires its very own database containing a table 'iiif_manifest' according to the following structure:
 ```
