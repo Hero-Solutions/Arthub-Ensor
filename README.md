@@ -376,7 +376,7 @@ This will match each row in the CSV with each resource in ResourceSpace by filen
 
 Once the appropriate metadata is added to each resource, execute the following command in order to generate IIIF Presentation API manifests for each resource:
 ```
-bin/console app:generate-iiif-manifests resource_id
+bin/console app:generate-iiif-manifests
 ```
 All manifests will be stored in a MySQL database and a link to each manifest will be added to the appropriate Datahub records.
 
