@@ -386,8 +386,8 @@ The Imagehub also provides the appropriate logging. Logs are stored in var/logs/
 
 Last of all, run the following two commands inside the Imagehub-Fixes folder:
 ```
-bash arthub-index.sh -e http://datahub.vlaamsekunstcollectie.be/oai -l nl
-bash arthub-index.sh -e http://datahub.vlaamsekunstcollectie.be/oai -l en
+bash scripts/arthub-index.sh -e http://datahub.vlaamsekunstcollectie.be/oai -l nl
+bash scripts/arthub-index.sh -e http://datahub.vlaamsekunstcollectie.be/oai -l en
 ```
 
 This will export all Datahub records and create an Apache Solr document for each record. You can then browse to the Arthub in your browser to look them up.
