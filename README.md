@@ -191,11 +191,9 @@ In fixes/datahub-oai-to-blacklight-solr-en.fix, also find and replace 'en' by 'n
 ```
 if all_match('dm.lang', 'en')
 ```
-,
 ```
 if all_match('am.lang', 'en')
 ```
-and
 ```
 if all_match('per.term.*.lang', 'en')
 ```
