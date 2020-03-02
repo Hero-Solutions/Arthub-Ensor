@@ -53,7 +53,6 @@ Certain metadata fields, most notably dropdown lists (for example Publisher and 
 mysql -u resourcespace -presourcespace resourcespace < resourcespace_node_values.sql
 ```
 
-
 The Imagehub itself also requires its very own database containing a table 'iiif_manifest' according to the following structure:
 ```
 CREATE TABLE `iiif_manifest` (
@@ -63,7 +62,7 @@ CREATE TABLE `iiif_manifest` (
   PRIMARY KEY (`id`)
 );
 ```
-A MySQL user is to be created with full access to this table. The username, password and database name can be freely chosen and are configured in the .env file in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) repository.
+A MySQL user is to be created with full access to this table. The username, password and database name can be freely chosen and will be configured in the .env file in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) repository (further in this document).
 
 ## Installation
 
