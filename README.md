@@ -34,7 +34,7 @@ The complete Arthub Ensor installation requires the following components:
 
 ## Preparation
 
-In order to add Datahub metadata to the appropriate resources, you first need to generate a CSV file that contains two columns: the image file name and the Datahub record ID which metadata about the image. A sample CSV file (for two images) may look like this:
+In order to add Datahub metadata to the appropriate resources, you first need to generate a CSV file that contains two columns: the image file name and the Datahub record ID that contains metadata about the work. A sample CSV file (for two images) may look like this:
 ```
 filename;datahub_record_id
 1857.jpg;oai:datahub.vlaamsekunstcollectie.be:kmska.be:1857
