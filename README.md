@@ -195,8 +195,6 @@ if all_match('per.term.*.lang', 'en')
 ```
 This will allow the pipeline to fetch Dutch metadata from the Datahub and put it in the English index in the Arthub.
 
-You will also need to install several Cpanminus Perl modules in order to run the pipeline. 
-
 ### Webserver configuration
 
 The necessary Apache or Nginx configuration should be written in order to access the Arthub, Imagehub and ResourceSpace installations (ideally through different subdomains)
