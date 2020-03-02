@@ -41,7 +41,7 @@ filename;datahub_record_id
 1858.001.jpeg;oai:datahub.vlaamsekunstcollectie.be:kmska.be:1858
 ```
 
-This CSV will be required by the Imagehub later on.
+This CSV will be required by the Imagehub later on. In this example, we will assume the filename is 'ensor.csv'.
 
 Your ResourceSpace installation also requires a specific set of metadata fields. You can set this up by using the resourcespace_metadata_fields.sql file included in the [Imagehub](https://github.com/Hero-Solutions/Imagehub/tree/ensor) project, this will drop and recreate the resource_type_field table. You can do so by running the following command on the server where ResourceSpace is installed:
 ```
@@ -365,9 +365,9 @@ Once all is set up correctly, you can start uploading images in bulk to Resource
 
 ### Adding Datahub metadata to ResourceSpace
 
-Once the images have been uploaded, execute the following command in the Imagehub installation folder:
+Once the images have been uploaded, execute the following command in the Imagehub installation folder (where 'ensor.csv' is the CSV file we generated at the start of the preparation):
 ```
-php bin/console app:csv-datahub-to-resourcespace csv_with_filenames_and_record_ids.csv
+php bin/console app:csv-datahub-to-resourcespace ensor.csv
 ```
 
 This will match each row in the CSV with each resource in ResourceSpace by filename, fetch the appropriate data from the Datahub and add this data to the resource.
