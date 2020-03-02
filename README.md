@@ -278,7 +278,7 @@ server {
 
 ### RS_ptif configuration
 
-Once the Imagehub is correctly installed, it is important to edit the appropriate config values in the RS_ptif ResourceSpace plugin so it correctly points to your newly installed Imagehub. Since this installation does not make use of authentication or a remote standalone image viewer, certain values can be left empty. The following lines may in this instance be appended at the end of the ResourceSpace configuration file:
+Once the Imagehub is correctly installed, it is important to edit the appropriate config values in the RS_ptif ResourceSpace plugin. Since this installation does not make use of authentication or a remote standalone image viewer, certain values can be left empty. The following lines may in this instance be appended at the end of the ResourceSpace configuration file:
 ```
 # RS_ptif configuration
 
