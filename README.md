@@ -128,13 +128,13 @@ cp -r solr-conf/blacklight-core/ solr/server/solr
 rake solr:start
 ```
 
-If rake solr:clean returns an error when attempting to download solr-x.x.x.zip.md5 (as it often does), you can manually download it, for example from https://archive.apache.org/dist/lucene/solr/7.3.1/solr-7.3.1.zip.md5 and copy the file to the 'tmp/' folder (relative to the project root), then run rake solr:clean again. If it still fails, it may be necessary to download solr-x.x.x.zip from the same website and put it in 'tmp/' as well.
+If rake solr:clean returns an error when attempting to download solr-x.x.x.zip.md5 (as it often does), you can manually download it, for example from https://archive.apache.org/dist/lucene/solr/7.3.1/solr-7.3.1.zip.md5 and copy the file to the 'tmp/' folder (relative to the project root), then run rake solr:clean again. If it still fails, it may be necessary to download solr-x.x.x.zip from the same website (https://archive.apache.org/dist/lucene/solr/7.3.1/) and put it in 'tmp/' as well.
 
 Precompile all assets by running the following command on the command line:
 ```
 RAILS_ENV=production bundle exec rake assets:precompile
 ```
-This will create all the assetes and store them in the /public/assets folder.
+This will create all the assets and store them in the /public/assets folder.
 
 Set the environment variable RAILS_SERVE_STATIC_FILES in your .bash_profile file (or equivalent) accordingly:
 ```
