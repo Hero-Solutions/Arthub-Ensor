@@ -134,7 +134,7 @@ Precompile all assets by running the following command on the command line:
 ```
 RAILS_ENV=production bundle exec rake assets:precompile
 ```
-This will create all the assets and store them in the /public/assets folder.
+This will create all the assets and store them in the 'public/assets' folder.
 
 Set the environment variable RAILS_SERVE_STATIC_FILES in your .bash_profile file (or equivalent) accordingly:
 ```
