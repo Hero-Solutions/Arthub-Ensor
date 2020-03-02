@@ -12,11 +12,11 @@ This project does not make use of the [IIIF Authentication API](https://iiif.io/
 
 The complete Arthub Ensor installation requires the following components:
 
-* Imagemagick
-* Exiftool
-* Sqlite3
+* ImageMagick
+* ExifTool
+* SQLite3
 * Perl >= 5.26
-* cpanminus
+* CPANMinus
 * libssl-dev
 * libxslt1-dev
 * PHP >= 7.2 with the following extensions (not all Arthub components may be compatible with PHP >= 7.3, so PHP 7.2 is recommended at the time of writing):
